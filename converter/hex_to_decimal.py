@@ -12,7 +12,7 @@ class HexToDecimalConverter(ConversionStrategy):
 
         byte_shift = 8
 
-        loop_count = loop_count = DataTypes.get_data_type_size(data_type)
+        loop_count = DataTypes.get_data_type_size(data_type)
 
         for byte_idx in range(loop_count):
             decimal_value |= hex_values[byte_idx] << (byte_shift * byte_idx)

@@ -12,7 +12,7 @@ class DecimalToHexConverter(ConversionStrategy):
         byte_list = []
         byte_mask = 0xFF
 
-        loop_count = DataTypes.get_data_type_size(data_type = data_type)
+        loop_count = DataTypes.get_data_type_size(data_type)
 
         for _ in range(loop_count):
             byte_list.append(value & byte_mask)
